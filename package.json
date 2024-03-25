@@ -1,0 +1,22 @@
+{
+  "name": "node-typescript",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:tsc": "tsc -b --watch --preserveWatchOutput",
+    "dev:node": "node --enable-source-maps --watch dist/index.js",
+    "dev": "pnpm run \"/dev:/\"",
+    "build": "tsc -b",
+    "prestart": "pnpm build",
+    "start": "pnpm build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  }
+}
