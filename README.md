@@ -1,8 +1,3 @@
-### `tsc` or `tsc -b` (build)
-
-- The `-b` flag also enables incremental compilation, which means that TypeScript will only recompile files that have changed or files that depend on files that have changed, making the compilation process faster for large projects
-<hr>
-
 ### `"prestart": "pnpm build",`
 
 - The prestart script is a special script in npm that gets automatically run before the start script when you run npm start.
